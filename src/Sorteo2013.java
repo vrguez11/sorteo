@@ -194,7 +194,7 @@ public class Sorteo2013 extends javax.swing.JFrame {
     private void jButtonSorteoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSorteoActionPerformed
         try {
             aleatorio = numAleatorio.nextInt(5)+1;
-            jLabelCentena.setText(aleatorio);
+            jLabelCentena.setText(String.valueOf(aleatorio));
             jLabelCentena.paintImmediately(0, 0, jLabelCentena.getWidth(), jLabelCentena.getHeight());
             Thread.sleep(300);
         } catch (InterruptedException ex) {
@@ -202,7 +202,7 @@ public class Sorteo2013 extends javax.swing.JFrame {
         }
         try {
             aleatorio = numAleatorio.nextInt(9)+1;
-            jLabelDecena.setText(aleatorio);
+            jLabelDecena.setText(String.valueOf(aleatorio));
             jLabelDecena.paintImmediately(0, 0, jLabelDecena.getWidth(), jLabelDecena.getHeight());
             Thread.sleep(300);
         } catch (InterruptedException ex) {
@@ -210,7 +210,7 @@ public class Sorteo2013 extends javax.swing.JFrame {
         }
         try {
             aleatorio = numAleatorio.nextInt(9)+1;
-            jLabelUnidad.setText(aleatorio);
+            jLabelUnidad.setText(String.valueOf(aleatorio));
             jLabelUnidad.paintImmediately(0, 0, jLabelUnidad.getWidth(), jLabelUnidad.getHeight());
             Thread.sleep(300);
         } catch (InterruptedException ex) {
